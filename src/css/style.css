@@ -1,0 +1,326 @@
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/paisagem.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* NavBar */
+
+#navbar{
+   position: fixed;
+   width: 100%;
+}
+
+.logo span{
+    font-size: 3.5rem;
+}
+.inic{
+    color: #000;
+    cursor: default;
+    display: block;
+    width: 30%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.menu{
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(77, 77, 77, 0.5);
+}
+
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu li a::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transition: all .5s;
+}
+
+.menu li a:hover::before{
+    width: 100%;
+    left: 0%;
+}
+
+/* header */
+
+header div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+header div h1{
+    font-size: 50px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header div p{
+    font-size: 20px;
+    color: #fff;
+    max-width: 40vw;
+    text-align: center;
+    width: 300px;
+    word-wrap: break-word;
+}
+
+header .btn{
+    text-align: center;
+    max-width: 120px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+    background-color: #000;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 80%;
+    margin: auto;
+    transition: all .8s;
+}
+header .btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* Sobre */
+
+.sobre{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.leftSobre{
+    height: 500px;
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 50px;
+}
+.leftSobre *{
+    text-align: center;
+    word-wrap: break-word;
+}
+.leftSobre h2{
+    font-size: 30px;
+}
+.leftSobre p{
+    font-size: 25px;
+}
+
+.rightSobre{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightSobre img{
+    height: 90%;
+    width: auto;
+    border-radius: 25px;
+}
+
+/* Pacotes de viagem */
+
+.pacotes{
+    width: 100%;
+    background-color: #c4c4c4;
+    padding: 0 50px;
+}
+.pacotes h2{
+    text-align: center;
+    padding: 30px 0;
+    font-size: 30px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+}
+
+.viagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 20px 30px;
+    transition: all .5s;
+}
+.viagem:hover{
+    background-color: #adadad;
+    scale: 1.02;
+}
+
+.viagem img{
+    width: 100%;
+    height: auto;
+}
+
+.viagem div{
+    background-color: #009e2a;
+    border-radius: 25px;
+    height: 30px;
+    width: 150px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-start;
+    margin-top: 30px;
+    transition: background .5s;
+    cursor: pointer;
+}
+.viagem div:hover{
+    background-color: #018825;
+}
+
+.viagem div a{
+    color: #fff ;
+}
+.viagem div img{
+    height: 100%;
+    width: auto;
+}
+
+.mais{
+    display: block;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.mais:hover{
+    text-decoration: underline;
+}
+
+/* Benefícios */
+
+.benfs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #c4c4c4;
+}
+
+.benfs .slot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.slot div{
+    background-color: #fff;
+    height: 200px;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.slot img{
+    width: auto;
+    height: 100%;
+}
+.slot p{
+    font-size: 22px;
+}
+
+/* footer */
+
+footer{
+    background-color: #001707;
+    padding: 20px 40px 0;
+}
+
+footer .logo{
+    color: #fff;
+}
+
+footer .infos{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin: 0 70px;
+}
+
+footer .infos ul li:first-child{
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    
+}
+.infos ul:first-child li:not(:first-child){
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+
+footer .infos ul>*{
+    color: #fff;
+    margin-bottom: 5px;
+}
+.infos ul li a{
+    color: #fff;
+    cursor: pointer;
+}
+.infos ul li a:hover{
+    text-decoration: underline;
+}
+
+.infos .sociais li a{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+.infos .icon{
+    height: 20px;
+    border-radius: 5px;
+}
+
+footer .copy{
+    text-align: center;
+    padding: 20px 0 10px;
+    color: #fff;
+}
