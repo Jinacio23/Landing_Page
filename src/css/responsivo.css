@@ -1,0 +1,70 @@
+@media (max-width: 900px) {
+    .rightSobre img {
+        height: 75% !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .raio {
+        background-color: rgba(77, 77, 77, 0.5);
+        border-radius: 50%;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .menuIcon {
+        display: block !important;
+    }
+
+    .menu {
+        display: none !important;
+    }
+
+    /* .menu {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        width: 200px !important;
+        height: 200px !important;
+        flex-direction: column;
+        justify-content: end !important;
+        padding-bottom: 20px;
+        gap: 20px;
+        overflow: hidden;
+    } */
+
+    .rightSobre img {
+        height: 60% !important;
+    }
+
+    .viagem div {
+        width: 120px !important;
+    }
+}
+
+@media (max-width: 650px) {
+    .sobre {
+        justify-content: center !important;
+    }
+
+    .rightSobre img {
+        display: none;
+    }
+
+    .leftSobre {
+        max-width: 60vw !important;
+        padding: 30px 0 !important;
+    }
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 420px) {
+    .pacotes {
+        padding: 0 0 !important;
+    }
+}
