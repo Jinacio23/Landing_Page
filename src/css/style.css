@@ -1,0 +1,437 @@
+header{
+    width: 100%;
+    height: 72vh;
+    background-image: url(../img/paisagem.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    border-radius: 50px;
+
+}
+
+/* NavBar */
+
+#navbar{
+   position: fixed;
+   left: 0;
+   right: 0;
+   margin: auto;
+   width: 95%;
+}
+
+.logo{
+    font-size: clamp(1rem,1.17vw + 1rem, 1.6rem);
+    margin-left: -30px;
+    width: 350px;
+    cursor: pointer;
+}
+.logo span{
+    font-size: clamp(3.5rem,4.1vw + 1rem, 5.6rem);
+}
+.inic{
+    color: #000;
+    cursor: default;
+    display: block;
+    width: 30%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.menu{
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(77, 77, 77, 0.5);
+    z-index: -1;
+    padding: 0 10px;
+}
+
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(1.8rem,1.47vw + 1rem, 2rem);
+    position: relative;
+}
+
+.menu li a::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transition: all .5s;
+}
+
+.menu li a:hover::before{
+    width: 100%;
+    left: 0%;
+}
+
+/* header */
+
+header .cont{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 90px;
+}
+
+header .slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+header .slogan h1{
+    font-size: clamp(3rem, 3.2vw + 1rem, 6rem);
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header .slogan p{
+    font-size: clamp(1.5rem,1.83vw + 1rem, 2.5rem);
+    color: #fff;
+    max-width: 40vw;
+    text-align: center;
+    width: 300px;
+    word-wrap: break-word;
+}
+
+
+header .btn{
+    text-align: center;
+    /* max-width: 140px; */
+    color: #fff;
+    font-weight: 600;
+    font-size: clamp(1rem,1.32vw + 1rem, 1.8rem);
+    padding: 10px;
+    background-color: #000;
+    border-radius: 10px;
+    transition: all .8s;
+}
+header .btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+section{
+    margin: 30px 0;
+}
+
+/* Destaque */
+.destaque{
+    background-color: #ccc;
+    border-radius: 50px;
+    width: 100%;
+    padding: 20px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destaque h2{
+    font-size: clamp(1.8rem,2.2vw + 1rem, 3rem);
+    margin-bottom: 20px;
+}
+
+.destaque .conteiner{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+}
+
+.destaque .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: calc(100%); */
+    gap: 8px;
+    
+}
+
+.destaque .card img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.destaque .card .descricao{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.destaque .card .descricao .txt{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.destaque .card .descricao h3{
+    font-size: 20px;
+}
+.destaque .card .descricao p{
+    font-size: 14px;
+}
+
+.destaque .card .avaliacao{
+    background-color: #009e2a;
+    display: flex;
+    align-items: center;
+    padding: 4px 6px;
+    gap: 4px;
+    border-radius: 20px;
+    color: #fff;
+}
+.destaque .card .avaliacao i{
+    font-size: 10px;
+}
+.destaque .card .avaliacao p{
+    font-weight: 800;
+}
+
+
+
+/* Sobre */
+
+.sobre{
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.leftSobre{
+    height: 500px;
+    width: 50%;
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 50px;
+}
+.leftSobre *{
+    text-align: center;
+    word-wrap: break-word;
+}
+.leftSobre h2{
+    font-size: clamp(1.8rem,2.2vw + 1rem, 3rem);
+}
+.leftSobre p{
+    font-size: clamp(1rem,1.2vw + 1rem, 2rem);
+}
+
+.rightSobre{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightSobre img{
+    height: 90%;
+    width: auto;
+    border-radius: 25px;
+}
+
+/* Pacotes de viagem */
+
+.pacotes{
+    width: 100%;
+    background-color: #c4c4c4;
+    padding: 0 50px 20px;
+    border-radius: 50px;
+}
+.pacotes h2{
+    text-align: center;
+    padding: 30px 0;
+    font-size: clamp(1.8rem,2.2vw + 1rem, 3rem);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px,1fr));
+}
+
+.viagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 20px 30px;
+    border-radius: 50px;
+    transition: all .5s;
+}
+.viagem:hover{
+    background-color: #adadad;
+    scale: 1.02;
+}
+
+.viagem img{
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.viagem .descricao{
+    font-size: clamp(1rem,1.32vw + 1rem, 1.8rem);
+}
+
+.viagem button{
+    background-color: #009e2a;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 150px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-start;
+    margin-top: 30px;
+    transition: background .5s;
+    cursor: pointer;
+}
+.viagem button:hover{
+    background-color: #018825;
+}
+
+.viagem button .btn{
+    color: #fff ;
+    font-size: clamp(1.4rem,1.17vw + 1rem, 1.6rem);
+}
+.viagem button img{
+    height: 100%;
+    width: auto;
+}
+
+/* Benefícios */
+
+.vantagens{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #e6faf4;
+    flex-wrap: wrap ;
+}
+
+.vantagens .slot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.slot div{
+    background-color: #018825;
+    height: min(50vw, 200px);
+    padding: 40px;
+    border-radius: 50%;
+}
+
+.slot img{
+    width: auto;
+    height: 100%;
+}
+.slot p{
+    font-size: clamp(1.8rem,1.61vw + 1rem, 2.2rem);
+}
+
+/* footer */
+
+footer{
+    background-color: #001707;
+    width: 100vw;
+    padding: 20px 40px 0;
+}
+
+footer .logo{
+    color: #fff;
+}
+
+footer .infos{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin: 0 40px;
+    flex-wrap: wrap;
+}
+
+footer .infos ul{
+    margin: 10px 20px;
+    align-content: start;
+}
+
+footer .infos ul li:first-child{
+    font-size: clamp(1.8rem,1.47vw + 1rem, 2rem);
+    text-decoration: underline;
+    margin-bottom: 15px;
+    
+}
+.infos ul:first-child li:not(:first-child){
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+
+footer .infos ul>*{
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: clamp(1.4rem, 1.28vw + 1rem, 1.75rem);
+}
+.infos ul li a{
+    color: #fff;
+    cursor: pointer;
+
+}
+.infos ul li a:hover{
+    text-decoration: underline;
+}
+
+.infos .sociais li a{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+.infos .icon{
+    height: 20px;
+    border-radius: 5px;
+}
+
+footer .copy{
+    text-align: center;
+    padding: 20px 0 10px;
+    color: #fff;
+    font-size: 1.4rem;
+}
