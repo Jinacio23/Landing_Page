@@ -435,3 +435,7 @@ footer .copy{
     color: #fff;
     font-size: 1.4rem;
 }
+
+.progress{
+    display: none;
+}
